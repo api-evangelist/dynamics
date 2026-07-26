@@ -1,8 +1,24 @@
 aid: dynamics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dynamics.png
 name: Dynamics
-description: 'Dynamics is a company surfaced as a portfolio company of bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Dynamics Inc designs and manufactures battery-powered interactive payment cards that work
+  with existing point-of-sale and card infrastructure. Its "Computer-in-a-Card" technology embeds a
+  microprocessor, buttons, and a rewritable magnetic stripe into a standard-size card, enabling programmable
+  multi-account cards, hidden card numbers, and on-card loyalty for banks, merchants, and consumers.
+  The company is a fintech hardware manufacturer backed by Bain Capital Ventures. As of this profile it
+  publishes no public developer API, SDK, or documentation surface; this repository tracks its identity
+  and public security posture in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/dynamics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Payments
+- Cards
+- Hardware
+- Payment Cards
+- Loyalty
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dynamics-domain-security.yml
 - type: Website
   url: https://www.dynamicsinc.com/main
+- type: Support
+  url: https://www.dynamicsinc.com/contact
+- type: PrivacyPolicy
+  url: https://www.dynamicsinc.com/Files/InternetDataPolicy.pdf
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
